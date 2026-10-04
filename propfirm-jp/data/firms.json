@@ -1,0 +1,877 @@
+{
+  "_meta": {
+    "collectedAt": "2026-10-05",
+    "note": "Web調査（大半が二次情報）から作成。公開前に各社公式で一次確認し、verifyStatusを'official'、lastVerifiedAtを確認日に更新すること。"
+  },
+  "firms": [
+    {
+      "slug": "ftmo",
+      "name": "FTMO",
+      "websiteUrl": "https://ftmo.com",
+      "affiliateUrl": null,
+      "hqCountry": "CZ",
+      "status": "active",
+      "jp": {
+        "residents": "yes",
+        "payoutProof": "unknown",
+        "card": "unknown",
+        "support": true,
+        "note": "制限国リストに日本の記載なし。日本語を含む21言語でサポート。JPY建て口座はなし"
+      },
+      "payoutMethods": [],
+      "riskNote": null,
+      "sourceUrl": "https://ftmo.com/en/trading-objectives/",
+      "verifyStatus": "official",
+      "lastVerifiedAt": "2026-10-05",
+      "discounts": [],
+      "cashback": [],
+      "programs": [
+        {
+          "slug": "2-step",
+          "name": "2-Step Challenge",
+          "challengeType": "two_step",
+          "platforms": [
+            "mt4",
+            "mt5",
+            "ctrader"
+          ],
+          "dailyDd": {
+            "pct": 5,
+            "basis": "start_of_day_balance",
+            "amountBase": "initial",
+            "resetTime": "00:00",
+            "resetTz": "Europe/Prague"
+          },
+          "maxDd": {
+            "pct": 10,
+            "type": "static"
+          },
+          "rules": {
+            "news": "conditional",
+            "weekend": "conditional",
+            "ea": "unknown",
+            "copy": "unknown",
+            "newsNote": "評価中は自由。ファンド口座のStandardタイプでは一部指標前後に制限（Swingタイプは制限なし）"
+          },
+          "consistency": null,
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": 90,
+            "firstPayoutDays": null,
+            "frequency": null,
+            "capNote": null,
+            "feeRefund": true
+          },
+          "phases": [
+            {
+              "targetPct": 10,
+              "minDays": 4,
+              "minTrades": 0,
+              "maxDays": null
+            },
+            {
+              "targetPct": 5,
+              "minDays": 4,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [
+            {
+              "balance": 100000,
+              "price": 540,
+              "currency": "EUR"
+            },
+            {
+              "balance": 200000,
+              "price": 1080,
+              "currency": "EUR"
+            }
+          ],
+          "notes": "日次は「当日0:00 CE(S)T時点の残高−初期資金の5%」を有効証拠金が下回ると違反。最大損失は初期資金の90%で固定。最低4取引日（ポジションを新規に建てた日）。利益目標は全ポジション決済後の残高で判定",
+          "sourceUrl": "https://ftmo.com/en/trading-objectives/",
+          "pricesVerified": false
+        },
+        {
+          "slug": "1-step",
+          "name": "1-Step Challenge",
+          "challengeType": "one_step",
+          "platforms": [
+            "mt4",
+            "mt5",
+            "ctrader"
+          ],
+          "dailyDd": {
+            "pct": 3,
+            "basis": "start_of_day_balance",
+            "amountBase": "initial",
+            "resetTime": "00:00",
+            "resetTz": "Europe/Prague"
+          },
+          "maxDd": {
+            "pct": 10,
+            "type": "eod_trailing"
+          },
+          "rules": {
+            "news": "conditional",
+            "weekend": "conditional",
+            "ea": "unknown",
+            "copy": "unknown",
+            "newsNote": "評価中は自由。ファンド口座のStandardタイプでは一部指標前後に制限（Swingタイプは制限なし）"
+          },
+          "consistency": {
+            "pct": 50,
+            "scope": "evaluation",
+            "note": "Best Day Rule: 最も利益の大きい日が勝ち日の利益合計の50%以下（評価中と報酬申請時の両方）"
+          },
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 90,
+            "splitMaxPct": 90,
+            "firstPayoutDays": null,
+            "frequency": null,
+            "capNote": null,
+            "feeRefund": null
+          },
+          "phases": [
+            {
+              "targetPct": 10,
+              "minDays": 0,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [
+            {
+              "balance": 10000,
+              "price": 79,
+              "currency": "EUR"
+            }
+          ],
+          "notes": "日次は「当日0:00 CE(S)T時点の残高−初期資金の3%」。最大損失は過去の0:00時点残高の最高値（初期資金未満なら初期資金）−初期資金の10%で、上がるだけで下がらない。Best Dayルールは違反ではなく、満たすまで取引を続ける扱い",
+          "sourceUrl": "https://ftmo.com/en/trading-objectives/",
+          "pricesVerified": false
+        }
+      ]
+    },
+    {
+      "slug": "the5ers",
+      "name": "The5ers",
+      "websiteUrl": "https://the5ers.com",
+      "affiliateUrl": null,
+      "hqCountry": "GB",
+      "status": "active",
+      "jp": {
+        "residents": "yes",
+        "payoutProof": "unknown",
+        "card": "unknown",
+        "support": null,
+        "note": "公式の利用不可地域リストに日本の記載なし（リストは「これらを含む」との表記）"
+      },
+      "payoutMethods": [],
+      "riskNote": null,
+      "sourceUrl": "https://the5ers.com/high-stakes/",
+      "verifyStatus": "official",
+      "lastVerifiedAt": "2026-10-05",
+      "discounts": [],
+      "cashback": [],
+      "programs": [
+        {
+          "slug": "high-stakes",
+          "name": "High Stakes（New）",
+          "challengeType": "two_step",
+          "platforms": [
+            "mt5"
+          ],
+          "dailyDd": {
+            "pct": 5,
+            "basis": "higher_of_balance_equity",
+            "amountBase": "reference",
+            "resetTime": null,
+            "resetTz": null
+          },
+          "maxDd": {
+            "pct": 10,
+            "type": "static"
+          },
+          "rules": {
+            "news": "conditional",
+            "newsNote": "重要指標の前後2分間の取引は禁止",
+            "weekend": "yes",
+            "ea": "unknown",
+            "copy": "unknown"
+          },
+          "consistency": null,
+          "leverageFx": "1:100",
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": 100,
+            "firstPayoutDays": null,
+            "frequency": null,
+            "capNote": null,
+            "feeRefund": true
+          },
+          "phases": [
+            {
+              "targetPct": 10,
+              "minDays": 3,
+              "minTrades": 0,
+              "maxDays": null
+            },
+            {
+              "targetPct": 5,
+              "minDays": 3,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [
+            {
+              "balance": 2500,
+              "price": 19,
+              "currency": "USD"
+            },
+            {
+              "balance": 5000,
+              "price": 35,
+              "currency": "USD"
+            },
+            {
+              "balance": 10000,
+              "price": 69,
+              "currency": "USD"
+            },
+            {
+              "balance": 25000,
+              "price": 176,
+              "currency": "USD"
+            },
+            {
+              "balance": 50000,
+              "price": 278,
+              "currency": "USD"
+            },
+            {
+              "balance": 100000,
+              "price": 491,
+              "currency": "USD"
+            }
+          ],
+          "notes": "最低日数は「初期残高の0.5%以上の利益日」が3日（各ステップ）。スケーリングは10%達成ごと、最大$500,000。$2.5Kの$19は公式で確認、他サイズはNew版の二次情報。第1目標8%のClassic版は別料金。日次リセットはMT5サーバー時間0時（タイムゾーン未確認）",
+          "sourceUrl": "https://the5ers.com/high-stakes/",
+          "pricesVerified": false
+        }
+      ]
+    },
+    {
+      "slug": "fundednext",
+      "name": "FundedNext",
+      "websiteUrl": "https://fundednext.com",
+      "affiliateUrl": null,
+      "hqCountry": "AE",
+      "status": "active",
+      "jp": {
+        "residents": "yes",
+        "payoutProof": "unknown",
+        "card": "unknown",
+        "support": true,
+        "note": "日本語サイトあり。ライブチャットは日本語可、KYCのビデオ面談は英語。USD建てが基本。公式の利用不可地域は北朝鮮・ミャンマー・ベラルーシ・イラン・ロシアのみ"
+      },
+      "payoutMethods": [],
+      "riskNote": null,
+      "sourceUrl": "https://fundednext.com/general-rules/cfds/trading-objectives",
+      "verifyStatus": "official",
+      "lastVerifiedAt": "2026-10-05",
+      "discounts": [],
+      "cashback": [],
+      "programs": [
+        {
+          "slug": "stellar-2-step",
+          "name": "Stellar 2-Step",
+          "challengeType": "two_step",
+          "platforms": [
+            "mt4",
+            "mt5",
+            "ctrader",
+            "match_trader"
+          ],
+          "dailyDd": {
+            "pct": 5,
+            "basis": "start_of_day_balance",
+            "amountBase": "initial",
+            "resetTime": "17:00",
+            "resetTz": "America/New_York"
+          },
+          "maxDd": {
+            "pct": 10,
+            "type": "static"
+          },
+          "rules": {
+            "news": "conditional",
+            "newsNote": "ファンド口座ではニュース取引の利益の分配率が40%",
+            "weekend": "unknown",
+            "ea": "yes",
+            "eaNote": "EA・インジケーター可。不正・悪用的な戦略は禁止",
+            "copy": "conditional",
+            "copyNote": "許可のないコピートレードは禁止"
+          },
+          "consistency": null,
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": 95,
+            "firstPayoutDays": 21,
+            "frequency": "初回21日後、以降14日ごと",
+            "capNote": null,
+            "feeRefund": null
+          },
+          "phases": [
+            {
+              "targetPct": 8,
+              "minDays": 5,
+              "minTrades": 0,
+              "maxDays": null
+            },
+            {
+              "targetPct": 5,
+              "minDays": 5,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [
+            {
+              "balance": 100000,
+              "price": 549.99,
+              "currency": "USD"
+            }
+          ],
+          "notes": "日次は初期残高の5%（確定＋含み損益、スワップ・手数料込み）。サーバー時間0:00にリセット（国内の検証記事では日本時間 夏6:00／冬7:00）。分配率はスケールアップで90%、アドオンで95%。チャレンジ利益の15%が初回スケールアップ後に別途支給。60日間取引がないと口座停止",
+          "sourceUrl": "https://fundednext.com/general-rules/cfds/trading-objectives",
+          "pricesVerified": false
+        },
+        {
+          "slug": "stellar-1-step",
+          "name": "Stellar 1-Step",
+          "challengeType": "one_step",
+          "platforms": [
+            "mt4",
+            "mt5",
+            "ctrader",
+            "match_trader"
+          ],
+          "dailyDd": {
+            "pct": 3,
+            "basis": "start_of_day_balance",
+            "amountBase": "initial",
+            "resetTime": "17:00",
+            "resetTz": "America/New_York"
+          },
+          "maxDd": {
+            "pct": 6,
+            "type": "static"
+          },
+          "rules": {
+            "news": "conditional",
+            "weekend": "unknown",
+            "ea": "yes",
+            "copy": "conditional"
+          },
+          "consistency": null,
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": 95,
+            "firstPayoutDays": null,
+            "frequency": null,
+            "capNote": null,
+            "feeRefund": null
+          },
+          "phases": [
+            {
+              "targetPct": 10,
+              "minDays": 2,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [],
+          "notes": "日次は初期残高の3%。$100Kの価格は$499.99と$599で情報源が割れている（要確認）",
+          "sourceUrl": "https://fundednext.com/general-rules/cfds/trading-objectives",
+          "pricesVerified": false
+        }
+      ]
+    },
+    {
+      "slug": "fundingpips",
+      "name": "FundingPips",
+      "websiteUrl": "https://fundingpips.com",
+      "affiliateUrl": null,
+      "hqCountry": "AE",
+      "status": "active",
+      "jp": {
+        "residents": "yes",
+        "payoutProof": "unknown",
+        "card": "unknown",
+        "support": false,
+        "note": "公式ヘルプの制限国はイラン・ベトナム・UAEのみ（制裁対象国を除く）。日本語対応は弱い"
+      },
+      "payoutMethods": [],
+      "riskNote": null,
+      "sourceUrl": "https://help.fundingpips.com/hc/en-us/articles/34501809112081-2-Step-Standard",
+      "verifyStatus": "official",
+      "lastVerifiedAt": "2026-10-05",
+      "discounts": [],
+      "cashback": [],
+      "programs": [
+        {
+          "slug": "2-step-standard",
+          "name": "2 Step Standard",
+          "challengeType": "two_step",
+          "platforms": [
+            "mt5",
+            "ctrader",
+            "match_trader"
+          ],
+          "dailyDd": {
+            "pct": 5,
+            "basis": "higher_of_balance_equity",
+            "amountBase": "reference",
+            "resetTime": "00:00",
+            "resetTz": "Etc/GMT-3"
+          },
+          "maxDd": {
+            "pct": 10,
+            "type": "static"
+          },
+          "rules": {
+            "news": "unknown",
+            "weekend": "unknown",
+            "ea": "conditional",
+            "eaNote": "第三者製EAに制限あり（要一次確認）",
+            "copy": "conditional",
+            "copyNote": "自分の口座間は可、他人との間は不可"
+          },
+          "consistency": null,
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": 100,
+            "firstPayoutDays": null,
+            "frequency": "隔週80%／月次100%などを購入時に選択",
+            "capNote": null,
+            "feeRefund": true
+          },
+          "phases": [
+            {
+              "targetPct": 8,
+              "minDays": 3,
+              "minTrades": 0,
+              "maxDays": null
+            },
+            {
+              "targetPct": 5,
+              "minDays": 3,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [
+            {
+              "balance": 50000,
+              "price": 289,
+              "currency": "USD"
+            }
+          ],
+          "notes": "日次3%のアドオン構成もあり。Phase1の10%目標は2026/7/24に廃止。返金は4回目の報酬時",
+          "sourceUrl": "https://help.fundingpips.com/hc/en-us/articles/34501809112081-2-Step-Standard",
+          "pricesVerified": false
+        },
+        {
+          "slug": "2-step-pro",
+          "name": "2 Step Pro",
+          "challengeType": "two_step",
+          "platforms": [
+            "mt5",
+            "ctrader",
+            "match_trader"
+          ],
+          "dailyDd": {
+            "pct": 3,
+            "basis": "higher_of_balance_equity",
+            "amountBase": "reference",
+            "resetTime": "00:00",
+            "resetTz": "Etc/GMT-3"
+          },
+          "maxDd": {
+            "pct": 6,
+            "type": "static"
+          },
+          "rules": {
+            "news": "unknown",
+            "weekend": "unknown",
+            "ea": "conditional",
+            "copy": "conditional"
+          },
+          "consistency": {
+            "pct": 35,
+            "scope": "payout",
+            "note": "報酬申請時、1日の利益が総利益の35%以下"
+          },
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": 80,
+            "firstPayoutDays": null,
+            "frequency": "週次",
+            "capNote": null,
+            "feeRefund": false
+          },
+          "phases": [
+            {
+              "targetPct": 6,
+              "minDays": 2,
+              "minTrades": 0,
+              "maxDays": null
+            },
+            {
+              "targetPct": 6,
+              "minDays": 2,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [],
+          "notes": "2026/8/26以降の購入・リセット分は最低2取引日",
+          "sourceUrl": "https://help.fundingpips.com/hc/en-us/articles/34502027344017-2-Step-Pro-Model",
+          "pricesVerified": false
+        }
+      ]
+    },
+    {
+      "slug": "fintokei",
+      "name": "Fintokei",
+      "websiteUrl": "https://www.fintokei.com/jp/",
+      "affiliateUrl": null,
+      "hqCountry": null,
+      "status": "active",
+      "jp": {
+        "residents": "yes",
+        "payoutProof": "unknown",
+        "card": "unknown",
+        "support": true,
+        "note": "日本市場向けに全面ローカライズ。円建て口座"
+      },
+      "payoutMethods": [],
+      "riskNote": null,
+      "sourceUrl": "https://www.fintokei.com/jp/",
+      "verifyStatus": "secondary",
+      "lastVerifiedAt": null,
+      "discounts": [],
+      "cashback": [],
+      "programs": [
+        {
+          "slug": "protrader",
+          "name": "チャレンジプラン（ProTrader）",
+          "challengeType": "two_step",
+          "platforms": [],
+          "dailyDd": {
+            "pct": 5,
+            "basis": "start_of_day_equity",
+            "amountBase": "reference",
+            "resetTime": "00:00",
+            "resetTz": "UTC"
+          },
+          "maxDd": {
+            "pct": 10,
+            "type": "static"
+          },
+          "rules": {
+            "news": "yes",
+            "weekend": "yes",
+            "ea": "unknown",
+            "copy": "unknown"
+          },
+          "consistency": null,
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": null,
+            "firstPayoutDays": null,
+            "frequency": null,
+            "capNote": null,
+            "feeRefund": null
+          },
+          "phases": [
+            {
+              "targetPct": 8,
+              "minDays": 3,
+              "minTrades": 0,
+              "maxDays": null
+            },
+            {
+              "targetPct": 6,
+              "minDays": 3,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [
+            {
+              "balance": 1000000,
+              "price": 12500,
+              "currency": "JPY"
+            }
+          ],
+          "notes": "2025年4月30日のシステム移行で、日次損失の基準時刻がUTC 0時（日本時間9:00、夏冬共通）に変更。cTraderのみサーバー時間0時。基準時刻の有効証拠金×5%。建玉の最大リスク3%ルールと「制限ルール」あり",
+          "sourceUrl": "https://www.fintokei.com/jp/",
+          "pricesVerified": false
+        },
+        {
+          "slug": "swifttrader",
+          "name": "速攻プロプラン（SwiftTrader）",
+          "challengeType": "one_step",
+          "platforms": [],
+          "dailyDd": {
+            "pct": 2,
+            "basis": "start_of_day_equity",
+            "amountBase": "reference",
+            "resetTime": "00:00",
+            "resetTz": "UTC"
+          },
+          "maxDd": {
+            "pct": 3,
+            "type": "static"
+          },
+          "rules": {
+            "news": "yes",
+            "weekend": "yes",
+            "ea": "unknown",
+            "copy": "unknown"
+          },
+          "consistency": null,
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 90,
+            "splitMaxPct": 90,
+            "firstPayoutDays": null,
+            "frequency": null,
+            "capNote": null,
+            "feeRefund": null
+          },
+          "phases": [
+            {
+              "targetPct": 6,
+              "minDays": 0,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [],
+          "notes": "公式ブログの記載に基づく。旧ルール（目標なし・日次3%・最大6%）を載せている二次情報が多いので注意",
+          "sourceUrl": "https://www.fintokei.com/jp/blog/fintokei-risk-management/",
+          "pricesVerified": false
+        }
+      ]
+    },
+    {
+      "slug": "fundora",
+      "name": "Fundora",
+      "websiteUrl": null,
+      "affiliateUrl": null,
+      "hqCountry": "JP",
+      "status": "active",
+      "jp": {
+        "residents": "yes",
+        "payoutProof": "unknown",
+        "card": "unknown",
+        "support": true,
+        "note": "日本発のプロップファーム。国内銀行振込で出金"
+      },
+      "payoutMethods": [
+        "jp_bank"
+      ],
+      "riskNote": "新興のため運営実績が短い",
+      "sourceUrl": "https://comparisonpropfirm.com/broker/fundora/",
+      "verifyStatus": "secondary",
+      "lastVerifiedAt": null,
+      "discounts": [],
+      "cashback": [],
+      "programs": [
+        {
+          "slug": "challenge",
+          "name": "チャレンジ（2-Step）",
+          "challengeType": "two_step",
+          "platforms": [
+            "ctrader"
+          ],
+          "dailyDd": {
+            "pct": 5,
+            "basis": "start_of_day_equity",
+            "amountBase": "reference",
+            "resetTime": "17:00",
+            "resetTz": "America/New_York"
+          },
+          "maxDd": {
+            "pct": 10,
+            "type": "static"
+          },
+          "rules": {
+            "news": "yes",
+            "weekend": "yes",
+            "ea": "conditional",
+            "eaNote": "cTraderのcBot前提",
+            "copy": "unknown"
+          },
+          "consistency": {
+            "pct": 33.33,
+            "scope": "payout",
+            "note": "報酬申請時、最大日次利益÷累積利益が33.3%以下"
+          },
+          "leverageFx": null,
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": 80,
+            "firstPayoutDays": 28,
+            "frequency": "初回28日後、以降14日ごと（指定日判定）",
+            "capNote": null,
+            "feeRefund": null
+          },
+          "phases": [
+            {
+              "targetPct": 8,
+              "minDays": 3,
+              "minTrades": 0,
+              "maxDays": null
+            },
+            {
+              "targetPct": 5,
+              "minDays": 3,
+              "minTrades": 0,
+              "maxDays": null
+            }
+          ],
+          "sizes": [
+            {
+              "balance": 2500000,
+              "price": 26999,
+              "currency": "JPY"
+            }
+          ],
+          "notes": "1トレードの損失1%ルール、20秒未満決済ルールあり。利益目標は含み益でも判定（公式FAQ）",
+          "sourceUrl": "https://comparisonpropfirm.com/broker/fundora/",
+          "pricesVerified": false
+        }
+      ]
+    },
+    {
+      "slug": "funded7",
+      "name": "Funded7",
+      "websiteUrl": "https://funded7.com/ja/",
+      "affiliateUrl": null,
+      "hqCountry": null,
+      "status": "active",
+      "jp": {
+        "residents": "yes",
+        "payoutProof": "unknown",
+        "card": "unknown",
+        "support": true,
+        "note": "日本語サイトあり。円建て料金"
+      },
+      "payoutMethods": [],
+      "riskNote": null,
+      "sourceUrl": "https://funded7.com/ja/two-phase-neo/",
+      "verifyStatus": "secondary",
+      "lastVerifiedAt": null,
+      "discounts": [],
+      "cashback": [],
+      "programs": [
+        {
+          "slug": "two-phase",
+          "name": "2フェーズ",
+          "challengeType": "two_step",
+          "platforms": [
+            "mt5",
+            "ctrader"
+          ],
+          "dailyDd": {
+            "pct": 5,
+            "basis": "start_of_day_balance",
+            "amountBase": "reference",
+            "resetTime": null,
+            "resetTz": null
+          },
+          "maxDd": {
+            "pct": 10,
+            "type": "static"
+          },
+          "rules": {
+            "news": "unknown",
+            "weekend": "unknown",
+            "ea": "unknown",
+            "copy": "unknown"
+          },
+          "consistency": {
+            "pct": null,
+            "scope": "payout",
+            "note": "QCルール（2番目と3番目に大きい利益日の合計で判定）"
+          },
+          "leverageFx": "1:50",
+          "payout": {
+            "splitPct": 80,
+            "splitMaxPct": 90,
+            "firstPayoutDays": null,
+            "frequency": null,
+            "capNote": "月間出金上限$10,000",
+            "feeRefund": true
+          },
+          "phases": [
+            {
+              "targetPct": 8,
+              "minDays": 3,
+              "minTrades": 10,
+              "maxDays": null
+            },
+            {
+              "targetPct": 6,
+              "minDays": 3,
+              "minTrades": 10,
+              "maxDays": null
+            }
+          ],
+          "sizes": [
+            {
+              "balance": 2000000,
+              "price": 14040,
+              "currency": "JPY"
+            },
+            {
+              "balance": 7000000,
+              "price": 50040,
+              "currency": "JPY"
+            },
+            {
+              "balance": 15000000,
+              "price": 76440,
+              "currency": "JPY"
+            },
+            {
+              "balance": 35000000,
+              "price": 140470,
+              "currency": "JPY"
+            },
+            {
+              "balance": 60000000,
+              "price": 261470,
+              "currency": "JPY"
+            }
+          ],
+          "notes": "日次損失は前日終了時残高×5%。参加費は初回出金時に返金。分配率90%はアドオン",
+          "sourceUrl": "https://fx.reform-network.net/2026/09/09/prop-firm-2-step-profit-target-risk-rules/",
+          "pricesVerified": false
+        }
+      ]
+    }
+  ]
+}

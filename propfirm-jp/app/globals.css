@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* 帳簿をモチーフにした配色: 藍のインク、冷たい灰青の紙、朱は失格ラインにだけ使う */
+:root {
+  --paper: #edf0f3;
+  --sheet: #f8f9fb;
+  --ink: #17263a;
+  --muted: #56667b;
+  --rule: #c7cfd9;
+  --indigo: #2e4a7d;
+  --breach: #c2412d;
+  --breach-deep: #8f2a1d;
+  --pass: #2f7d55;
+  --pending: #a9b4c2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #111824;
+    --sheet: #172131;
+    --ink: #e3e8ef;
+    --muted: #93a1b5;
+    --rule: #2c3a4e;
+    --indigo: #93acd8;
+    --breach: #e0705e;
+    --breach-deep: #b34a3a;
+    --pass: #5dbb8a;
+    --pending: #4a596d;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-sheet: var(--sheet);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-indigo: var(--indigo);
+  --color-breach: var(--breach);
+  --color-breach-deep: var(--breach-deep);
+  --color-pass: var(--pass);
+  --color-pending: var(--pending);
+  --font-sans: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+  --font-serif: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
+html { background: var(--paper); color: var(--ink); }
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "palt";
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+:focus-visible { outline: 2px solid var(--indigo); outline-offset: 2px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* 帳簿の罫線: 表の横罫だけを引き、縦罫は使わない */
+.ledger { border-collapse: collapse; width: 100%; }
+.ledger th, .ledger td { border-bottom: 1px solid var(--rule); padding: 0.7rem 0.75rem; text-align: left; vertical-align: top; }
+.ledger thead th { font-weight: 500; color: var(--muted); font-size: 0.8125rem; border-bottom: 2px solid var(--ink); white-space: nowrap; }
+.ledger td.r, .ledger th.r { text-align: right; }
+
+/* 日本語見出しを文節で改行する */
+h1, h2 { word-break: auto-phrase; text-wrap: balance; }
